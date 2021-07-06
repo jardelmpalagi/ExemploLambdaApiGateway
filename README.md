@@ -1,4 +1,10 @@
-# PrimeiraFuncaoComSAM
+# Exemplo Lambda com API Gateway
+
+Projeto meramente didático para a integração entre api-gateway, lambda e dynamodb, não leva em consideração boas práticas (clean code) de desenvolvimento e padrões RESTful.
+
+- API Gateway
+- Lambda
+- DynamoDB
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
