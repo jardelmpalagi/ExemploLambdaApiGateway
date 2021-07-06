@@ -1,0 +1,14 @@
+{
+    "body": {
+      "message" : "Minha mensagem no evento"
+    },
+    "resource": "/{proxy+}",
+    "path": "/path/to/resource",
+    "httpMethod": "POST",
+    "isBase64Encoded": false,
+    "queryStringParameters": {
+      "foo": "bar"
+    },
+    "pathParameters": {"id":  1}
+  }
+  

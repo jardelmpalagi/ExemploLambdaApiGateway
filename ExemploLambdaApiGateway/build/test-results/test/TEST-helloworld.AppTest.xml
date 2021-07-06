@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="helloworld.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-22T00:00:59" hostname="Latitude-3450" time="0.003">
+  <properties/>
+  <testcase name="successfulResponse" classname="helloworld.AppTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

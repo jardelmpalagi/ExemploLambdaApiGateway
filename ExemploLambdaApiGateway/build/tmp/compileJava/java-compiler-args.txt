@@ -1,0 +1,14 @@
+-source
+1.8
+-target
+1.8
+-d
+/home/jardel/myGit/PrimeiraFuncaoComSAM/HelloWorldFunction/build/classes/java/main
+-g
+-sourcepath
+""
+-proc:none
+-XDuseUnsharedTable=true
+-classpath
+/home/jardel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.2.1/ee677e3b913a2835c13b2746a7761b0a7b55a65d/aws-lambda-java-core-1.2.1.jar:/home/jardel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-events/3.6.0/252999fb67bbe1ea4bdd96d180ace4c432c9dc0b/aws-lambda-java-events-3.6.0.jar:/home/jardel/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.6/5015880733b0bc0ce813a3ed5601064c1d413671/joda-time-2.6.jar
+/home/jardel/myGit/PrimeiraFuncaoComSAM/HelloWorldFunction/src/main/java/helloworld/App.java

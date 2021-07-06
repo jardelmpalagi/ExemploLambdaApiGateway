@@ -1,0 +1,59 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  ExemploLambdaApiGateway
+
+  Sample SAM Template for ExemploLambdaApiGateway
+
+Globals:
+  Function:
+    Timeout: 20
+
+Resources:
+  PrimeiraFuncaoComSAM:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ExemploLambdaApiGateway
+      Handler: helloworld.App::handleRequest
+      Runtime: java11
+      MemorySize: 512
+      Events:
+        CategoriaGet:
+          Type: Api
+          Properties:
+            Path: /categoria
+            Method: get
+        HelloWorldGet:
+          Type: Api
+          Properties:
+            Path: /hello/{id}
+            Method: get
+        HelloWorldPost:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: post
+        HelloWorldDelete:
+          Type: Api
+          Properties:
+            Path: /hello/{id}
+            Method: delete
+        HelloWorldPut:
+          Type: Api
+          Properties:
+            Path: /hello/{id}
+            Method: put
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  ExemploLambdaApiGatewayApi:
+    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  ExemploLambdaApiGateway:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt ExemploLambdaApiGateway.Arn
+  ExemploLambdaApiGatewayIamRole:
+    Description: "Implicit IAM Role created for Hello World function"
+    Value: !GetAtt ExemploLambdaApiGatewayRole.Arn
